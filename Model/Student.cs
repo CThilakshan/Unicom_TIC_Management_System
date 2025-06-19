@@ -17,5 +17,8 @@ namespace Unicom_TIC_Management_System.Model
         /// </summary>
         public string Course_ID {  get; set; }
         public string Course_Name { get; set; }
+
+
+
     }
 }
