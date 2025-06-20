@@ -166,6 +166,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Unicomtic.db" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
