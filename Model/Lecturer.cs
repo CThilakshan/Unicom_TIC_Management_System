@@ -9,7 +9,9 @@ namespace Unicom_TIC_Management_System.Model
     internal class Lecturer
     {
         public int Lecturer_ID {  get; set; }
-        public int Lecturer_Name { get; set; }
+        public string Lecturer_Name { get; set; }
+        public string Lecturer_Phone_No { get; set; }
+        public string Lecturer_Email { get; set; }
 
         /// <summary>
         /// 

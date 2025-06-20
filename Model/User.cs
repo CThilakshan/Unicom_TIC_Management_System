@@ -9,7 +9,7 @@ namespace Unicom_TIC_Management_System.Model
     internal class User
     {
         public int User_ID {  get; set; }
-        public string Login_Name { get; set; }
+        public string Name { get; set; }
         public string Role {  get; set; }
         public string Username {  get; set; }
         public string Password { get; set; }

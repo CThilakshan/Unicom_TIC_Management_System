@@ -10,6 +10,6 @@ namespace Unicom_TIC_Management_System.Model
     {
         public int Room_ID {  get; set; }
         public string Room_Name { get; set;}
-        public string Room_type { get; set; }
+        public string Room_Type { get; set; }
     }
 }

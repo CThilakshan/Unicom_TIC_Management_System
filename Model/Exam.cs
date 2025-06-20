@@ -14,6 +14,7 @@ namespace Unicom_TIC_Management_System.Model
         public string Exam_Date {  get; set; }
         public int Subject_ID { get;set; }
         public string Subject_Name { get; set; }
-
+        public int Course_ID { get; set; }
+        public string Course_Name { get; set; }
     }
 }
