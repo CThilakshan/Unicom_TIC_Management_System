@@ -11,9 +11,9 @@ namespace Unicom_TIC_Management_System.Controller
 {
     internal class StudentController
     {
-        public void InsertStudent(string name, string address)
+        public void InsertStudent(string name, string address,string email)
         {
-            string insertQuery = "INSERT INTO Student (Name, Address) VALUES (@Name, @Address)";
+            string insertQuery = "INSERT INTO Student (Student_Name, Student_Phone_No, Student_Email) VALUES (@Name, @Phone_no,@Email)";
 
             using (var conn = DBConnection.GetConnection())
             {
@@ -21,7 +21,8 @@ namespace Unicom_TIC_Management_System.Controller
                 using (var cmd = new SQLiteCommand(insertQuery, conn))
                 {
                     cmd.Parameters.AddWithValue("@Name", name);
-                    cmd.Parameters.AddWithValue("@Address", address);
+                    cmd.Parameters.AddWithValue("@Phone_no", address);
+                    cmd.Parameters.AddWithValue("@Email", email);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Student inserted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
